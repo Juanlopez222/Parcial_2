@@ -3,32 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Perfil</title>
+    <title>Calculadora</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Juan Lopez</h1>
-            <img src="https://www.plotandesign.com/wp-content/uploads/2023/02/ventajas-y-desventajas-de-los-portatiles.jpg" alt="Foto de perfil" class="profile-img">
-        </header>
+    <div class="calculator">
+        <h2>Calculadora Básica</h2>
         
-        <section class="personal-info">
-            <h2>Información Personal</h2>
-            <p>Edad: 22 años</p>
-            <p>Ciudad: Bogotá D.C.</p>
-            <p class="description">Desarrollador backend full stack con 5 años de experiencia en desarrollo de paginas web y aplicaciones móviles.</p>
-            
-            <h3>Habilidades e intereses:</h3>
-            <ul>
-                <li>Programación en JavaScript</li>
-                <li>Desarrollo de aplicaciones web</li>
-                <li>Inteligencia Artificial</li>
-                <li>Deportes extremos</li>
-            </ul>
-        </section>
+        <input type="number" id="num1" placeholder="Primer número">
+        <input type="number" id="num2" placeholder="Segundo número">
         
-        <button id="themeToggle">Cambiar tema</button>
+        <div class="buttons">
+            <button onclick="calculate('+')">+</button>
+            <button onclick="calculate('-')">-</button>
+            <button onclick="calculate('*')">×</button>
+            <button onclick="calculate('/')">÷</button>
+        </div>
+        
+        <div id="result"></div>
     </div>
 
     <script src="script.js"></script>
